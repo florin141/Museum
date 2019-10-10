@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary1
+namespace Museum.Core
 {
-    public class Class1
+    public abstract class BaseEntity
     {
+        public int Id { get; set; }
     }
 }
