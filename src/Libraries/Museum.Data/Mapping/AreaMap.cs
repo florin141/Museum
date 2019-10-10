@@ -17,7 +17,7 @@ namespace Museum.Data.Mapping
 
             this.Property(a => a.AreaName).HasMaxLength(128).IsRequired();
             this.Property(a => a.Zip).HasMaxLength(10).IsOptional();
-            this.Property(a => a.SurfaceArea).IsOptional();
+            this.Property(a => a.SurfaceArea).IsRequired();
             this.Property(a => a.Population).IsRequired();
 
             this.HasRequired(c => c.City)

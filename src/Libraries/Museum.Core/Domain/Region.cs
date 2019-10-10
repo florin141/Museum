@@ -13,8 +13,6 @@ namespace Museum.Core.Domain
         public string OfficialLanguage { get; set; }
         public DateTime NationalDay { get; set; }
         public string Website { get; set; }
-        public float SurfaceArea { get; set; }
-        public int Population { get; set; }
 
         public int CountryId { get; set; }
         public Country Country { get; set; }

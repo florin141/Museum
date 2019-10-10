@@ -10,8 +10,6 @@ namespace Museum.Core.Domain
     {
         public string CityName { get; set; }
         public string MayorName { get; set; }
-        public float SurfaceArea { get; set; }
-        public int Population { get; set; }
 
         public int RegionId { get; set; }
         public Region Region { get; set; }

@@ -62,6 +62,10 @@
     <Compile Include="Migrations\201910101612090_InitialCreate.Designer.cs">
       <DependentUpon>201910101612090_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910102034138_RemoveAreaAndPopulation.cs" />
+    <Compile Include="Migrations\201910102034138_RemoveAreaAndPopulation.Designer.cs">
+      <DependentUpon>201910102034138_RemoveAreaAndPopulation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MuseumObjectContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -79,6 +83,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201910101612090_InitialCreate.resx">
       <DependentUpon>201910101612090_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910102034138_RemoveAreaAndPopulation.resx">
+      <DependentUpon>201910102034138_RemoveAreaAndPopulation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

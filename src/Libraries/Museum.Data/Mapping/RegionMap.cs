@@ -20,8 +20,6 @@ namespace Museum.Data.Mapping
             this.Property(r => r.OfficialLanguage).HasMaxLength(64).IsOptional();
             this.Property(r => r.NationalDay).IsRequired();
             this.Property(r => r.Website).HasMaxLength(128).IsOptional();
-            this.Property(r => r.SurfaceArea).IsRequired();
-            this.Property(r => r.Population).IsRequired();
 
             this.HasRequired(r => r.Country)
                 .WithMany(c => c.Regions)
