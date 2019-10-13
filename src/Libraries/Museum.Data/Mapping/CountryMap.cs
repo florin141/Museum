@@ -15,11 +15,14 @@ namespace Museum.Data.Mapping
             this.ToTable(nameof(Country));
             this.HasKey(c => c.Id);
 
-            this.Property(c => c.CountryName).HasMaxLength(128).IsRequired();
+            this.Property(c => c.Name).HasMaxLength(128).IsRequired();
+            this.Property(c => c.Capital).HasMaxLength(128).IsRequired();
+            this.Property(c => c.Language).HasMaxLength(128).IsRequired();
             this.Property(c => c.CountryCode).HasMaxLength(5).IsRequired();
-            this.Property(c => c.DialingCode).HasMaxLength(4);
-            this.Property(c => c.Currency).HasMaxLength(10).IsRequired();
+            this.Property(c => c.DialingCode).HasMaxLength(4).IsOptional();
             this.Property(c => c.DrivingSide).IsOptional();
+            this.Property(c => c.Currency).HasMaxLength(10).IsRequired();
+            this.Property(c => c.GDP).IsOptional();
             this.Property(c => c.Flag).IsOptional();
         }
     }

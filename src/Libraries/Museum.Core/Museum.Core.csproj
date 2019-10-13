@@ -43,16 +43,12 @@
   <ItemGroup>
     <Compile Include="BaseEntity.cs" />
     <Compile Include="Data\IRepository.cs" />
-    <Compile Include="Domain\Area.cs" />
     <Compile Include="Domain\Country.cs" />
     <Compile Include="Domain\DrivingSide.cs" />
     <Compile Include="Domain\Feature.cs" />
-    <Compile Include="Domain\FeatureType.cs" />
     <Compile Include="Domain\City.cs" />
     <Compile Include="Domain\Museums.cs" />
     <Compile Include="Domain\MuseumType.cs" />
-    <Compile Include="Domain\Owner.cs" />
-    <Compile Include="Domain\Region.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -41,9 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Areas\AreaService.cs" />
-    <Compile Include="Areas\IAreaService.cs" />
     <Compile Include="Museum\IMuseumService.cs" />
+    <Compile Include="Museum\MuseumService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

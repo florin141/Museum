@@ -15,12 +15,17 @@ namespace Museum.Data.Mapping
             this.ToTable(nameof(City));
             this.HasKey(c => c.Id);
 
-            this.Property(c => c.CityName).HasMaxLength(128).IsRequired();
-            this.Property(c => c.MayorName).HasMaxLength(64).IsOptional();
+            this.Property(c => c.Name).HasMaxLength(128).IsRequired();
+            this.Property(c => c.Mayor).HasMaxLength(128).IsOptional();
+            this.Property(c => c.Area).IsRequired();
+            this.Property(c => c.Population).IsRequired();
+            this.Property(c => c.Rank).IsOptional();
+            this.Property(c => c.Density).IsOptional();
+            this.Property(c => c.Website).IsOptional();
 
-            this.HasRequired(r => r.Region)
+            this.HasRequired(r => r.Country)
                 .WithMany(c => c.Cities)
-                .HasForeignKey(r => r.RegionId);
+                .HasForeignKey(c => c.CountryId);
         }
     }
 }

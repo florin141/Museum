@@ -9,26 +9,22 @@ namespace Museum.Service.Museum
 {
     public interface IMuseumService
     {
+        /// <summary>
+        /// Gets all museums
+        /// </summary>
+        /// <param name="areaName">Area name; null load all museums</param>
+        /// <param name="cityName">City name; null load all museums</param>
+        /// <param name="regionName">Region name; null load all museums</param>
+        /// <param name="countryName">Country name; null load all museums</param>
+        /// <param name="featureName">Feature name; null load all museums</param>
+        /// <param name="ownerName">Owner name; null load all museums</param>
+        /// <param name="museumType">Museum type; null load all museums</param>
+        /// <returns></returns>
         IEnumerable<Museums> GetAllMuseums(
-            DateTime? createdFromUtc = null, 
-            DateTime? createdToUtc = null,
-            int affiliateId = 0, 
-            int vendorId = 0, 
-            int[] customerRoleIds = null,
-            string email = null, 
-            string username = null, 
-            string firstName = null, 
-            string lastName = null,
-            int dayOfBirth = 0, 
-            int monthOfBirth = 0,
-            string company = null, 
-            string phone = null, 
-            string zipPostalCode = null, 
-            string ipAddress = null,
-            int pageIndex = 0, 
-            int pageSize = int.MaxValue, 
-            bool getOnlyTotalCount = false);
-
-
+            string cityName = null,
+            string countryName = null,
+            string featureName = null,
+            string ownerName = null,
+            string museumType = null);
     }
 }

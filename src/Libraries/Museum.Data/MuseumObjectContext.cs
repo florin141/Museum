@@ -22,14 +22,10 @@ namespace Museum.Data
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             modelBuilder.Configurations.Add(new CountryMap());
-            modelBuilder.Configurations.Add(new RegionMap());
             modelBuilder.Configurations.Add(new CityMap());
             modelBuilder.Configurations.Add(new MuseumsMap());
             modelBuilder.Configurations.Add(new FeatureMap());
-            modelBuilder.Configurations.Add(new OwnerMap());
             modelBuilder.Configurations.Add(new MuseumTypeMap());
-            modelBuilder.Configurations.Add(new FeatureTypeMap());
-
 
             base.OnModelCreating(modelBuilder);
         }

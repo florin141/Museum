@@ -15,12 +15,8 @@ namespace Museum.Data.Mapping
             this.ToTable(nameof(Feature));
             this.HasKey(f => f.Id);
 
-            this.Property(f => f.FeatureName).HasMaxLength(128).IsRequired();
+            this.Property(f => f.Name).HasMaxLength(128).IsRequired();
             this.Property(f => f.Description).IsOptional();
-
-            this.HasRequired(t => t.FeatureType)
-                .WithMany(f => f.Features)
-                .HasForeignKey(f => f.FeatureTypeId);
         }
     }
 }

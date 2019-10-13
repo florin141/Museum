@@ -8,12 +8,17 @@ namespace Museum.Core.Domain
 {
     public class City : BaseEntity
     {
-        public string CityName { get; set; }
-        public string MayorName { get; set; }
+        public string Name { get; set; }
+        public string Mayor { get; set; }
+        public float Area { get; set; }
+        public int Population { get; set; }
+        public int Rank { get; set; }
+        public int Density { get; set; }
+        public string Website { get; set; }
 
-        public int RegionId { get; set; }
-        public Region Region { get; set; }
+        public int CountryId { get; set; }
+        public Country Country { get; set; }
 
-        public ICollection<Area> Areas { get; set; }
+        public ICollection<Museums> Museums { get; set; }
     }
 }

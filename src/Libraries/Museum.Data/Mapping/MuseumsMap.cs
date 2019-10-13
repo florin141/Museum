@@ -15,26 +15,26 @@ namespace Museum.Data.Mapping
             this.ToTable("Museum");
             this.HasKey(m => m.Id);
 
-            this.Property(m => m.MuseumName).HasMaxLength(128).IsRequired();
+            this.Property(m => m.Name).HasMaxLength(128).IsRequired();
             this.Property(m => m.Description).IsOptional();
-            this.Property(m => m.BuiltDate).IsRequired();
-            this.Property(m => m.BecomeMuseumDate).IsOptional();
-            this.Property(m => m.OpeningHour).IsOptional();
-            this.Property(m => m.ClosingHour).IsOptional();
-            this.Property(m => m.AnnualVisitorCount).IsRequired();
+            this.Property(m => m.PhoneNumber).HasMaxLength(15).IsRequired();
+            this.Property(m => m.Address).HasMaxLength(64).IsRequired();
+            this.Property(m => m.EmailAddress).HasMaxLength(128).IsRequired();
+            this.Property(m => m.OpeningHour).IsRequired();
+            this.Property(m => m.ClosingHour).IsRequired();
             this.Property(m => m.AdmissionCharge).HasColumnType("money").IsRequired();
+            this.Property(m => m.Website).HasMaxLength(128).IsRequired();
+            this.Property(m => m.AnnualVisitor).IsRequired();
+            this.Property(m => m.BuiltDate).IsOptional();
+            this.Property(m => m.Rating).IsOptional();
 
-            this.HasRequired(a => a.Area)
-                .WithMany(m => m.Museums)
-                .HasForeignKey(m => m.AreaId);
+            this.HasRequired(c => c.City)
+                .WithMany(a => a.Museums)
+                .HasForeignKey(c => c.CityId);
 
             this.HasOptional(t => t.MuseumType)
                 .WithMany(m => m.Museums)
                 .HasForeignKey(m => m.MuseumTypeId);
-
-            this.HasOptional(o => o.Owner)
-                .WithMany(m => m.Museums)
-                .HasForeignKey(m => m.OwnerId);
 
             this.HasMany(f => f.Features)
                 .WithMany(m => m.Museums)
