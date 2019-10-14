@@ -21,33 +21,28 @@ namespace Museum.Api.Infrastructure
 
         protected void CreateCitiesMaps()
         {
-            CreateMap<City, CityDto>();
-            CreateMap<CityDto, City>();
+            CreateMap<City, CityDto>().ReverseMap();
         }
 
         protected void CreateCountriesMaps()
         {
-            CreateMap<Country, CountryDto>();
-            CreateMap<CountryDto, Country>();
+            CreateMap<Country, CountryDto>().ReverseMap();
         }
 
         protected void CreateFeatureMaps()
         {
-            CreateMap<Feature, FeatureDto>();
-            CreateMap<FeatureDto, Feature>();
+            CreateMap<Feature, FeatureDto>().ReverseMap();
         }
 
         protected void CreateMuseumMaps()
         {
             CreateMap<Museo, MuseumDto>()
-                .ForMember(c => c.OpeningHours, opt => opt.MapFrom(m => m.OpeningHour + " a.m. - " + m.ClosingHour + " p.m."));
-            CreateMap<MuseumDto, Museo>();
+                .ForMember(c => c.OpeningHours, opt => opt.MapFrom(m => m.OpeningHour + " a.m. - " + m.ClosingHour + " p.m.")).ReverseMap();
         }
 
         protected void CreateMuseumTypeMaps()
         {
-            CreateMap<MuseumType, MuseumTypeDto>();
-            CreateMap<MuseumTypeDto, MuseumType>();
+            CreateMap<MuseumType, MuseumTypeDto>().ReverseMap();
         }
     }
 }

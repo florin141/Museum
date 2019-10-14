@@ -15,6 +15,8 @@ namespace Museum.Data
             : base("Development")
         {
             Database.SetInitializer(new CreateDatabaseIfNotExists<MuseumObjectContext>());
+
+            //Configuration.LazyLoadingEnabled = true;
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
