@@ -20,5 +20,6 @@ namespace Museum.Api.Models
         public DrivingSide DrivingSide { get; set; }
         public string Currency { get; set; }
         public long GDP { get; set; }
+        public ICollection<CityDto> Cities { get; set; }
     }
 }
