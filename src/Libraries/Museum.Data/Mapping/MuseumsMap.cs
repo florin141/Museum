@@ -8,7 +8,7 @@ using Museum.Core.Domain;
 
 namespace Museum.Data.Mapping
 {
-    public class MuseumsMap : EntityTypeConfiguration<Museums>
+    public class MuseumsMap : EntityTypeConfiguration<Museo>
     {
         public MuseumsMap()
         {

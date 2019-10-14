@@ -66,6 +66,10 @@
     <Compile Include="Migrations\201910112316013_SimplifyModel.Designer.cs">
       <DependentUpon>201910112316013_SimplifyModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910140848198_SetFieldsLength.cs" />
+    <Compile Include="Migrations\201910140848198_SetFieldsLength.Designer.cs">
+      <DependentUpon>201910140848198_SetFieldsLength.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MuseumObjectContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,6 +94,10 @@
     <EmbeddedResource Include="Migrations\201910112316013_SimplifyModel.resx">
       <DependentUpon>201910112316013_SimplifyModel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910140848198_SetFieldsLength.resx">
+      <DependentUpon>201910140848198_SetFieldsLength.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

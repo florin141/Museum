@@ -21,7 +21,7 @@ namespace Museum.Data.Mapping
             this.Property(c => c.Population).IsRequired();
             this.Property(c => c.Rank).IsOptional();
             this.Property(c => c.Density).IsOptional();
-            this.Property(c => c.Website).IsOptional();
+            this.Property(c => c.Website).HasMaxLength(128).IsOptional();
 
             this.HasRequired(r => r.Country)
                 .WithMany(c => c.Cities)

@@ -3,8 +3,10 @@ using System.Collections.Generic;
 
 namespace Museum.Core.Domain
 {
-    // ToDo: Fix class name conflict with namespace name
-    public class Museums : BaseEntity
+    /// <summary>
+    /// Museum (Museo)
+    /// </summary>
+    public class Museo : BaseEntity
     {
         /// <summary>
         /// Museum name

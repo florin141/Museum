@@ -11,6 +11,6 @@ namespace Museum.Core.Domain
         public string Name { get; set; }
         public string Description { get; set; }
 
-        public ICollection<Museums> Museums { get; set; }
+        public ICollection<Museo> Museums { get; set; }
     }
 }

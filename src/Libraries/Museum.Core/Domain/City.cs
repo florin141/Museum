@@ -19,6 +19,6 @@ namespace Museum.Core.Domain
         public int CountryId { get; set; }
         public Country Country { get; set; }
 
-        public ICollection<Museums> Museums { get; set; }
+        public ICollection<Museo> Museums { get; set; }
     }
 }

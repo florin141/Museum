@@ -47,7 +47,7 @@
     <Compile Include="Domain\DrivingSide.cs" />
     <Compile Include="Domain\Feature.cs" />
     <Compile Include="Domain\City.cs" />
-    <Compile Include="Domain\Museums.cs" />
+    <Compile Include="Domain\Museo.cs" />
     <Compile Include="Domain\MuseumType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
