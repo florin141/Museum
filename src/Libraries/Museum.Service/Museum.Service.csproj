@@ -12,6 +12,8 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,8 +44,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Museum\IMuseumService.cs" />
-    <Compile Include="Museum\MuseumService.cs" />
+    <Compile Include="Cities\CityService.cs" />
+    <Compile Include="Cities\ICityService.cs" />
+    <Compile Include="Countries\CountryService.cs" />
+    <Compile Include="Countries\ICountryService.cs" />
+    <Compile Include="Features\FeatureService.cs" />
+    <Compile Include="Features\IFeatureService.cs" />
+    <Compile Include="MuseumTypes\IMuseumTypeService.cs" />
+    <Compile Include="MuseumTypes\MuseumTypeService.cs" />
+    <Compile Include="Museums\IMuseumService.cs" />
+    <Compile Include="Museums\MuseumService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +66,8 @@
       <Name>Museum.Data</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

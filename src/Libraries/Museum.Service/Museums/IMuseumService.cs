@@ -5,10 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Museum.Service.Museum
+namespace Museum.Service.Museums
 {
     public interface IMuseumService
     {
+        Museo GetMuseumById(int museumId);
+
         /// <summary>
         /// Gets all museums
         /// </summary>
@@ -20,11 +22,18 @@ namespace Museum.Service.Museum
         /// <param name="ownerName">Owner name; null load all museums</param>
         /// <param name="museumType">Museum type; null load all museums</param>
         /// <returns></returns>
-        IEnumerable<Museums> GetAllMuseums(
+        IEnumerable<Museo> GetAllMuseums(
             string cityName = null,
             string countryName = null,
             string featureName = null,
             string ownerName = null,
             string museumType = null);
+
+        void Insert(Museo museum);
+        void Insert(IEnumerable<Museo> museums);
+        void Update(Museo museum);
+        void Update(IEnumerable<Museo> museums);
+        void Delete(Museo museum);
+        void Delete(IEnumerable<Museo> museums);
     }
 }
