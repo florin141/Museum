@@ -17,19 +17,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Museum.Service", "src\Libra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Museum.ConsoleApp", "src\Presentation\Museum.ConsoleApp\Museum.ConsoleApp.csproj", "{245DE76E-B7C1-4875-A5A1-10FE7F8F0611}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Museum.Core.Tests", "src\Tests\Museum.Core.Tests\Museum.Core.Tests.csproj", "{7CE33917-7244-4BC9-B3E5-2B3AC5F333F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Museum.Core.Tests", "src\Tests\Museum.Core.Tests\Museum.Core.Tests.csproj", "{7CE33917-7244-4BC9-B3E5-2B3AC5F333F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Museum.Service.Tests", "src\Tests\Museum.Service.Tests\Museum.Service.Tests.csproj", "{71145869-DFB2-4703-83B7-0E0B74989E67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Museum.Service.Tests", "src\Tests\Museum.Service.Tests\Museum.Service.Tests.csproj", "{71145869-DFB2-4703-83B7-0E0B74989E67}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{F964B8D6-0BA4-413D-B853-C74B920614F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Museum.Api", "src\Gateway\Museum.Api\Museum.Api.csproj", "{A51E36CC-525D-4D15-90F9-9C4DFC1E6A32}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Museum.Web", "src\Presentation\Museum.Web\Museum.Web.csproj", "{45ED1085-971F-436C-A8CA-C5CFCCC2824D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Museum.Api.Tests", "src\Tests\Museum.Api.Tests\Museum.Api.Tests.csproj", "{A5E68632-D9DF-42EF-A8B7-0C299692A378}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Museum.Api.Tests", "src\Tests\Museum.Api.Tests\Museum.Api.Tests.csproj", "{A5E68632-D9DF-42EF-A8B7-0C299692A378}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Museum.Web.Tests", "src\Tests\Museum.Web.Tests\Museum.Web.Tests.csproj", "{6BC54579-B1D9-4CC4-90A3-28A91D41B571}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Museum.Web.Tests", "src\Tests\Museum.Web.Tests\Museum.Web.Tests.csproj", "{6BC54579-B1D9-4CC4-90A3-28A91D41B571}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Museum.Api", "src\Gateway\Museum.Api\Museum.Api.csproj", "{7FAE0994-46D0-4311-8C51-97C4104C2185}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,10 +61,6 @@ Global
 		{71145869-DFB2-4703-83B7-0E0B74989E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71145869-DFB2-4703-83B7-0E0B74989E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71145869-DFB2-4703-83B7-0E0B74989E67}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A51E36CC-525D-4D15-90F9-9C4DFC1E6A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A51E36CC-525D-4D15-90F9-9C4DFC1E6A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A51E36CC-525D-4D15-90F9-9C4DFC1E6A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A51E36CC-525D-4D15-90F9-9C4DFC1E6A32}.Release|Any CPU.Build.0 = Release|Any CPU
 		{45ED1085-971F-436C-A8CA-C5CFCCC2824D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{45ED1085-971F-436C-A8CA-C5CFCCC2824D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45ED1085-971F-436C-A8CA-C5CFCCC2824D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -77,6 +73,10 @@ Global
 		{6BC54579-B1D9-4CC4-90A3-28A91D41B571}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BC54579-B1D9-4CC4-90A3-28A91D41B571}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BC54579-B1D9-4CC4-90A3-28A91D41B571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FAE0994-46D0-4311-8C51-97C4104C2185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FAE0994-46D0-4311-8C51-97C4104C2185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FAE0994-46D0-4311-8C51-97C4104C2185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FAE0994-46D0-4311-8C51-97C4104C2185}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,10 +88,10 @@ Global
 		{245DE76E-B7C1-4875-A5A1-10FE7F8F0611} = {0E713873-5533-4945-9F87-518C5884B148}
 		{7CE33917-7244-4BC9-B3E5-2B3AC5F333F5} = {A6331A56-E838-4BAA-A4CB-E19BBF1A632B}
 		{71145869-DFB2-4703-83B7-0E0B74989E67} = {A6331A56-E838-4BAA-A4CB-E19BBF1A632B}
-		{A51E36CC-525D-4D15-90F9-9C4DFC1E6A32} = {F964B8D6-0BA4-413D-B853-C74B920614F4}
 		{45ED1085-971F-436C-A8CA-C5CFCCC2824D} = {0E713873-5533-4945-9F87-518C5884B148}
 		{A5E68632-D9DF-42EF-A8B7-0C299692A378} = {A6331A56-E838-4BAA-A4CB-E19BBF1A632B}
 		{6BC54579-B1D9-4CC4-90A3-28A91D41B571} = {A6331A56-E838-4BAA-A4CB-E19BBF1A632B}
+		{7FAE0994-46D0-4311-8C51-97C4104C2185} = {F964B8D6-0BA4-413D-B853-C74B920614F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3698F710-EBD1-4DB7-9DF1-F8D72648D607}
